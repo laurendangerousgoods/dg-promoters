@@ -621,7 +621,7 @@ function sellTable(sell, wins){
 function winGroup(h){
   const mine = S.me;
   return `<div class="win-group"><p><b>${esc(h.name)}</b>${h.rule ? ' · ' + esc(h.rule) : ''}</p>
-    <div class="chips">${h.winners.length ? h.winners.map(w => `<span class="chip win ${w.code === mine ? 'me' : ''}">${esc(w.code)}${w.sales != null ? ` <small>${w.sales} sale${w.sales === 1 ? '' : 's'}</small>` : ''}${w.reward ? ` <small>· ${esc(w.reward)}</small>` : ''}</span>`).join('') : `<span class="muted" style="font-size:13.5px">${esc(h.note || 'Nobody qualified')}</span>`}</div></div>`;
+    <div class="chips">${h.winners.length ? h.winners.map(w => `<span class="chip win ${w.code === mine ? 'me' : ''}">${esc(w.code)}${w.sales != null ? ` <small>${w.sales} sale${w.sales === 1 ? '' : 's'}</small>` : ''}${w.reward ? ` <small>· ${esc(w.reward)}</small>` : ''}</span>`).join('') : `<span class="muted" style="font-size:13.5px">${esc(h.note || 'Nobody qualified')}</span>`}</div>${h.winners.length && h.note ? `<p class="muted" style="font-size:13px;margin-top:6px">${esc(h.note)}</p>` : ''}</div>`;
 }
 
 // ---- my numbers
@@ -761,7 +761,7 @@ function renderInc(){
   const hist = (D.history || []).slice().reverse();
   $('#inc-hist').innerHTML = hist.length ? hist.map(h => `<div class="inc-card"><div class="h"><span class="n">${esc(h.name)}</span><span class="w">Week ending ${esc(dayLab(h.week_ends, true))}</span></div>
       ${h.rule ? `<p>${esc(h.rule)}</p>` : ''}
-      <div class="chips">${h.winners.length ? h.winners.map(w => `<span class="chip win ${w.code === S.me ? 'me' : ''}">${esc(w.code)}${w.sales != null ? ` <small>${w.sales}</small>` : ''}${w.reward ? ` <small>· ${esc(w.reward)}</small>` : ''}</span>`).join('') : `<span class="muted" style="font-size:13.5px">${esc(h.note || 'Nobody qualified')}</span>`}</div></div>`).join('')
+      <div class="chips">${h.winners.length ? h.winners.map(w => `<span class="chip win ${w.code === S.me ? 'me' : ''}">${esc(w.code)}${w.sales != null ? ` <small>${w.sales}</small>` : ''}${w.reward ? ` <small>· ${esc(w.reward)}</small>` : ''}</span>`).join('') : `<span class="muted" style="font-size:13.5px">${esc(h.note || 'Nobody qualified')}</span>`}</div>${h.winners.length && h.note ? `<p class="muted" style="font-size:13px;margin-top:6px">${esc(h.note)}</p>` : ''}</div>`).join('')
     : '<div class="empty">No incentive winners yet.</div>';
 }
 
