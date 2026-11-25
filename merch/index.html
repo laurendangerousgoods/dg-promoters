@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0e0d10">
+<title>DG Merch Team</title>
+<meta name="description" content="Dangerous Goods promoter merch team: find your code, copy your link, merch credit and the next drop dates.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dangerous Goods Apparel">
+<meta property="og:title" content="DG Merch Team">
+<meta property="og:description" content="Dangerous Goods promoter merch team: find your code, copy your link, merch credit and the next drop dates.">
+<meta property="og:url" content="https://laurendangerousgoods.github.io/dg-promoters/merch/">
+<meta property="og:image" content="https://laurendangerousgoods.github.io/dg-promoters/merch/preview.jpg?v=202611250348">
+<meta property="og:image:secure_url" content="https://laurendangerousgoods.github.io/dg-promoters/merch/preview.jpg?v=202611250348">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DG merch team page">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DG Merch Team">
+<meta name="twitter:description" content="Dangerous Goods promoter merch team: find your code, copy your link, merch credit and the next drop dates.">
+<meta name="twitter:image" content="https://laurendangerousgoods.github.io/dg-promoters/merch/preview.jpg?v=202611250348">
+<style>:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#0e0d10;color:#f5f2f7}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..900&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: phone-first single column (max 760px): hazard tape, masthead, live drop status, find your code (parcel-label card), how it works + credit ladder, drop dates, whole team. Same black brand system as the DG XXL promoter leaderboards; merch gets hazard yellow. */
+:root{
+  color-scheme:dark;
+  --bg:#0e0d10; --surface:#18161b; --surface-2:#1f1d23; --ink:#f5f2f7; --ink-2:#cdc7d2; --muted:#9a93a1; --line:#2e2a33;
+  --accent:#f2c230; --on-accent:#141109; --accent-soft:#2f2712; --glow:rgba(242,194,48,.18);
+  --live:#5cc98a; --live-bg:#16301f;
+  --display:"Archivo","Arial Black","Helvetica Neue",Arial,sans-serif;
+  --sans:"Barlow","Helvetica Neue",Arial,sans-serif;
+  --cond:"Barlow Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{background:radial-gradient(900px 460px at 12% -120px,var(--glow),transparent 72%) no-repeat,var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.45;margin:0}
+.tape{height:14px;background:repeating-linear-gradient(-45deg,var(--accent) 0 18px,var(--bg) 18px 36px)}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:22px 48px;display:grid;gap:26px}
+@media (min-width:560px){.wrap{padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}}
+
+.mast{border-bottom:3px solid var(--accent);padding-bottom:16px}
+.word{font-family:var(--display);font-stretch:125%;font-weight:900;font-size:clamp(17px,4.6vw,24px);line-height:1;letter-spacing:-.01em}
+.word em{font-style:normal;color:var(--accent)}
+.title{font-family:var(--display);font-stretch:125%;font-weight:900;font-size:clamp(42px,13vw,84px);line-height:.88;text-transform:uppercase;color:var(--accent);margin:10px 0 0;text-wrap:balance}
+.sub{font-family:var(--cond);font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-top:12px}
+
+h2{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:18px;line-height:1.1;text-transform:uppercase;letter-spacing:.01em;margin:0;text-wrap:balance}
+.label{font-family:var(--cond);text-transform:uppercase;letter-spacing:.1em;font-weight:600;font-size:12.5px;color:var(--muted)}
+.sec{display:grid;gap:12px;min-width:0}
+.sec-hd{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+
+/* live status */
+.status{border:2px solid var(--accent);border-radius:14px;padding:16px 18px;display:grid;gap:8px;background:var(--surface)}
+.pill{display:inline-flex;align-items:center;gap:7px;width:max-content;font:700 12.5px var(--cond);letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.pill.live{background:var(--live-bg);color:var(--live)}
+.pill.live::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+.status h3{font-family:var(--display);font-stretch:112%;font-weight:900;font-size:clamp(22px,6.4vw,32px);line-height:1;text-transform:uppercase;margin:2px 0 0;text-wrap:balance}
+.status p{margin:0;color:var(--ink-2);max-width:60ch}
+
+/* find */
+.find label{display:block;margin-bottom:8px}
+.find input{width:100%;font:600 17px var(--sans);padding:14px 16px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+.find input::placeholder{color:var(--muted);font-weight:500}
+.find input:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.hint{margin:0;color:var(--muted);font-size:14px}
+
+/* parcel-label code card */
+.tag{border-radius:14px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+.tag-top{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--accent);color:var(--on-accent);padding:8px 16px;font:700 13px var(--cond);letter-spacing:.1em;text-transform:uppercase}
+.tag-body{padding:16px;display:grid;gap:12px;min-width:0}
+.tag .who{font:600 15px var(--sans);color:var(--ink-2);overflow-wrap:anywhere}
+.tag .big{font-family:var(--cond);font-weight:700;font-size:clamp(38px,11vw,66px);letter-spacing:.03em;line-height:.95;overflow-wrap:anywhere}
+.tag .soon{font-family:var(--cond);font-weight:700;font-size:28px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.url{font:500 14px var(--sans);color:var(--ink-2);background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;overflow-wrap:anywhere;user-select:all;-webkit-user-select:all}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{font:700 15px var(--sans);border-radius:10px;padding:11px 16px;border:1.5px solid var(--line);background:var(--surface-2);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;line-height:1.1}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.ok{background:var(--live-bg);border-color:var(--live);color:var(--live)}
+.btn:focus-visible,.link:focus-visible,.row-pick:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tag-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border-top:1.5px dashed var(--line);padding:10px 16px;font:600 13px var(--cond);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.link{background:none;border:0;padding:4px 0;font:inherit;letter-spacing:inherit;text-transform:inherit;color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* rows (search results + whole team) */
+.rows{display:grid;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.row-pick{all:unset;cursor:pointer;display:grid;gap:1px;min-width:0;border-radius:6px}
+.row-pick .ig{font:500 14px var(--sans);color:var(--ink-2);overflow-wrap:anywhere}
+.row-pick .cd{font:700 20px var(--cond);letter-spacing:.03em;line-height:1.1;overflow-wrap:anywhere}
+.row-pick .cd.none{color:var(--muted);font-size:16px;text-transform:uppercase;letter-spacing:.06em}
+.row .btn{padding:8px 12px;font-size:14px}
+.row.me .cd{color:var(--accent)}
+
+/* how it works */
+.perks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:520px){.perks{grid-template-columns:minmax(0,1fr)}}
+.perk{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:4px;align-content:start}
+.perk b{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:15px;text-transform:uppercase;letter-spacing:.01em}
+.perk span{color:var(--ink-2)}
+.ladder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media (max-width:520px){.ladder{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rung{border-radius:12px;padding:12px 14px 12px;display:grid;gap:2px;border:1px solid rgba(255,255,255,.06)}
+.rung b{font-family:var(--display);font-stretch:112%;font-weight:900;font-size:clamp(26px,7vw,34px);line-height:1;font-variant-numeric:tabular-nums}
+.rung span{font:700 14px var(--cond);letter-spacing:.06em;text-transform:uppercase}
+.r1{background:color-mix(in srgb,var(--accent) 16%,var(--surface));color:var(--ink)}
+.r2{background:color-mix(in srgb,var(--accent) 42%,var(--surface));color:var(--ink)}
+.r3{background:color-mix(in srgb,var(--accent) 70%,var(--surface));color:var(--on-accent)}
+.r4{background:var(--accent);color:var(--on-accent)}
+.ladder-note{margin:0;color:var(--muted);font-size:14px}
+
+/* drop dates */
+.dates{display:grid;border-top:1px solid var(--line)}
+.date{display:grid;grid-template-columns:92px minmax(0,1fr) auto;gap:14px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}
+.date .when{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.06em;line-height:1.1}
+.date .when small{display:block;font-weight:600;color:var(--muted);letter-spacing:.08em;margin-top:2px}
+.date .what b{display:block;font-weight:700;font-size:15.5px}
+.date .what span{color:var(--ink-2)}
+.date.done .when,.date.done .what{opacity:.55}
+.chip{font:700 12px var(--cond);letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:99px;white-space:nowrap;background:var(--surface-2);color:var(--muted);border:1px solid var(--line)}
+.chip.live{background:var(--live-bg);color:var(--live);border-color:transparent}
+.chip.next{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+@media (max-width:440px){.date{grid-template-columns:76px minmax(0,1fr)}.date .chip{grid-column:2;justify-self:start}}
+.tz{margin:0;color:var(--muted);font-size:13.5px}
+
+.foot{display:grid;gap:6px;color:var(--muted);font-size:13.5px;border-top:3px solid var(--accent);padding-top:14px}
+.foot p{margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.pill.live::before{animation:none}}
+</style>
+
+<div class="tape" aria-hidden="true"></div>
+<main class="wrap">
+  <header class="mast">
+    <div class="word">DANGEROUS GOODS <em>APPAREL</em></div>
+    <h1 class="title">Merch team</h1>
+    <div class="sub">Promoter merch team · your code, your credit, the drop dates</div>
+  </header>
+
+  <section class="status" id="status" aria-live="polite">
+    <span class="pill" id="st-pill">Up next</span>
+    <h3 id="st-h">Early access opens Wed 25 Nov, 6PM</h3>
+    <p id="st-p">Sign ups shop first, and that includes you: 40% off for Black Friday plus free shipping for 24 hours.</p>
+  </section>
+
+  <section class="sec find" aria-labelledby="find-h">
+    <div class="sec-hd"><h2 id="find-h">Find your code</h2><span class="label" id="team-n"></span></div>
+    <div>
+      <label class="label" for="q">Type your Instagram handle or your code</label>
+      <input id="q" type="search" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="e.g. your.handle">
+    </div>
+    <div id="card"></div>
+    <div id="results"></div>
+    <p class="hint" id="hint">Start typing and tap your name to see your code and link.</p>
+  </section>
+
+  <section class="sec" aria-labelledby="how-h">
+    <h2 id="how-h">How it works</h2>
+    <div class="perks">
+      <div class="perk"><b>The inside scoop</b><span>Hear about upcoming drops before anyone else, and tell us what you think of them.</span></div>
+      <div class="perk"><b>Early access</b><span>Shop every drop before it goes public.</span></div>
+      <div class="perk"><b>Your own code</b><span>$10 off for anyone who uses it. Share your code or your link.</span></div>
+      <div class="perk"><b>Merch credit</b><span>Every $250 in sales through your code earns you $50 merch credit, and it stacks.</span></div>
+    </div>
+    <div class="ladder" aria-label="Merch credit ladder">
+      <div class="rung r1"><b>$50</b><span>$250 in sales</span></div>
+      <div class="rung r2"><b>$100</b><span>$500 in sales</span></div>
+      <div class="rung r3"><b>$150</b><span>$750 in sales</span></div>
+      <div class="rung r4"><b>$200</b><span>$1,000 in sales</span></div>
+    </div>
+    <p class="ladder-note">Then another $50 credit for every $250 after that.</p>
+  </section>
+
+  <section class="sec" aria-labelledby="dates-h">
+    <h2 id="dates-h">The next drop</h2>
+    <div class="dates" id="dates"></div>
+    <p class="tz">Times are AEDT (Melbourne and Sydney). 6PM AEDT is 5PM in Brisbane, 5:30PM in Adelaide and 3PM in Perth.</p>
+  </section>
+
+  <section class="sec" aria-labelledby="team-h">
+    <div class="sec-hd"><h2 id="team-h">The whole team</h2><span class="label">A–Z by Instagram</span></div>
+    <div class="rows" id="team"></div>
+  </section>
+
+  <footer class="foot">
+    <p>Codes as at Wed 25 Nov 2026.</p>
+    <p>Not on the list, or something looks wrong? Send us a DM on Instagram and we'll sort it.</p>
+  </footer>
+  <div class="sr" aria-live="polite" id="announce"></div>
+</main>
+
+<script>
+(function(){
+  var BASE = 'https://dangerousgoodsapparel.com.au/discount/';
+  var TEAM = [
+    ["adi._.koshti","ADIDG"],["Iam._.alby","ALBYDG"],["Ambrosaurus_","AMBRO5"],["andrew.van06","ANDREWDG"],
+    ["that.anton","ANTONDG"],["avaaaak06","AVA10DG"],["Rebekka.jayde","BEKKDG"],["b3nny_official","BENNYDJ"],
+    ["lil.blanga","BLANGADG"],["Ciaraadams24","CIARADG"],["cassidy.lubke","CLDG6PR"],["Packmeupaconederlad","CYNDG"],
+    ["ryanda.ng","DANGDG"],["devendenley","DEVENDG"],["_dunee.sha_","DUNEEDG"],["edenjorjaa","EDENDG"],
+    ["eml1y.xxo","EMILYDG"],["felicityywatson","FLICDG"],["Fukvyxf","FUKVYXFDG"],["tinkerbell.beauty.melbs","HALEYDG"],
+    ["Indi_affleck","INDIDG"],["Jameyryan11","JAMEYDG"],["jaxonbrock","JAX10DG"],["Julzhd1410","JULZHD04DG"],
+    ["Kalin._.123","KALIN07DG"],["k.enzeelouise","KENZDG"],["_kevskii","KEVSKIIDG"],["keyshawncunningham","KEYSHAWNDG"],
+    ["Myworld_littleredwonder","KINGMAKERSDG"],["mrkttlad","KTTLADDG"],["theeasilyamused","LANADG"],["L4nkyg","LANKYDG"],
+    ["lachie_pitt","LCHYDG"],["lilamontgmry","LILADG"],["madisunstorm","MADISUNDG"],["maxhellmuth_","MAXHDG"],
+    ["mili.harrod","MILIHDG"],["_nicoledslv","NICSDG"],["ninapr.__","NINAPDG"],["Oldduckravers","OLDDUCKRAVERSDG"],
+    ["Bookdbydan","PARTYDG"],["pruthuvi_001_","PRUTHUVI005"],["Courtneyywoods","RAVEBABYDG"],["sunsbii._","SASHAB5"],
+    ["Shakirakhose_","SHARKRADG"],["sidney_pearse","SIDNEYDG"],["solyx.mc","SOLYXDG"],["Sophile_main","SOSO22DG"],
+    ["Steve_h85","STEVEHDG"],["Suz_6795","SUSANDG"],["taylahdyer69","TDYERDG"],["xy.tommm","TOMDG"],
+    ["xxenocurse","XENODG"],["zoeyhharris","ZOEYDG"],["Dramaticheart2001",""],["dxrkhorror_",""]
+  ].map(function(r){ return {ig:r[0].trim(), code:r[1], url:r[1] ? BASE + r[1] : ''}; });
+
+  var sortKey = function(s){ return s.toLowerCase().replace(/^[^a-z0-9]+/, ''); };
+  TEAM.sort(function(a,b){ return sortKey(a.ig).localeCompare(sortKey(b.ig)); });
+  var norm = function(s){ return s.toLowerCase().replace(/[@\s]/g, ''); };
+  var esc = function(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
+  var $ = function(id){ return document.getElementById(id); };
+
+  var withCode = TEAM.filter(function(p){ return p.code; }).length;
+  $('team-n').textContent = TEAM.length + ' on the team';
+
+  /* remembered promoter: a per-phone convenience only */
+  var STORE = 'dgMerchMe';
+  var saved = null;
+  try { saved = localStorage.getItem(STORE); } catch(e) {}
+  var selected = TEAM.filter(function(p){ return saved && p.ig === saved; })[0] || null;
+
+  function announce(msg){ $('announce').textContent = ''; setTimeout(function(){ $('announce').textContent = msg; }, 30); }
+  function flash(btn, msg){
+    if (!btn.dataset.label) btn.dataset.label = btn.textContent;
+    btn.textContent = msg; btn.classList.add('ok');
+    clearTimeout(btn._t);
+    btn._t = setTimeout(function(){ btn.textContent = btn.dataset.label; btn.classList.remove('ok'); }, 1800);
+    announce(msg);
+  }
+  function selectText(el){
+    try { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); } catch(e) {}
+  }
+  function copy(text, btn, onFail){
+    var fail = function(){ onFail && onFail(); flash(btn, 'Selected, now copy it'); };
+    try {
+      navigator.clipboard.writeText(text).then(function(){ flash(btn, 'Copied'); }, fail);
+    } catch(e) { fail(); }
+  }
+
+  function card(p){
+    var isMe = saved === p.ig;
+    var body = p.code
+      ? '<div class="big">' + esc(p.code) + '</div>' +
+        '<div class="url" id="card-url">' + esc(p.url) + '</div>' +
+        '<div class="btns">' +
+          '<button class="btn primary" type="button" data-act="link">Copy link</button>' +
+          '<button class="btn" type="button" data-act="code">Copy code</button>' +
+          '<a class="btn" href="' + esc(p.url) + '" target="_blank" rel="noopener">Open link</a>' +
+        '</div>'
+      : '<div class="soon">Code coming soon</div><p class="hint" style="margin:0">Your code is being set up. Check back here soon.</p>';
+    return '<article class="tag" aria-label="Code for ' + esc(p.ig) + '">' +
+      '<div class="tag-top"><span>DG merch team</span><span>$10 off with this code</span></div>' +
+      '<div class="tag-body"><div class="who">@' + esc(p.ig) + '</div>' + body + '</div>' +
+      '<div class="tag-foot"><span>Every $250 through it = $50 credit</span>' +
+        '<button class="link" type="button" data-act="remember">' + (isMe ? 'Forget me on this phone' : 'Remember me on this phone') + '</button></div>' +
+    '</article>';
+  }
+
+  function rowHtml(p, i){
+    var me = selected && selected.ig === p.ig;
+    return '<div class="row' + (me ? ' me' : '') + '">' +
+      '<button class="row-pick" type="button" data-i="' + i + '" aria-label="Show code for ' + esc(p.ig) + '">' +
+        '<span class="ig">@' + esc(p.ig) + '</span>' +
+        (p.code ? '<span class="cd">' + esc(p.code) + '</span>' : '<span class="cd none">Code coming soon</span>') +
+      '</button>' +
+      (p.code ? '<button class="btn" type="button" data-copy="' + i + '">Copy link</button>' : '') +
+    '</div>';
+  }
+
+  function renderCard(){
+    $('card').innerHTML = selected ? card(selected) : '';
+  }
+  function renderTeam(){
+    $('team').innerHTML = TEAM.map(rowHtml).join('');
+  }
+  function renderResults(){
+    var q = norm($('q').value);
+    if (!q) { $('results').innerHTML = ''; $('hint').hidden = !!selected; $('hint').textContent = 'Start typing and tap your name to see your code and link.'; return; }
+    var hits = [];
+    TEAM.forEach(function(p, i){ if (norm(p.ig).indexOf(q) > -1 || p.code.toLowerCase().indexOf(q) > -1) hits.push(i); });
+    var exact = hits.filter(function(i){ return norm(TEAM[i].ig) === q || TEAM[i].code.toLowerCase() === q; });
+    if (exact.length === 1 || hits.length === 1) { selected = TEAM[(exact[0] !== undefined ? exact : hits)[0]]; renderCard(); renderTeam(); }
+    var show = hits.filter(function(i){ return !(selected && TEAM[i].ig === selected.ig); }).slice(0, 8);
+    $('results').innerHTML = show.length ? '<div class="rows">' + show.map(function(i){ return rowHtml(TEAM[i], i); }).join('') + '</div>' : '';
+    $('hint').hidden = hits.length > 0;
+    if (!hits.length) $('hint').textContent = 'No one matches "' + $('q').value.trim() + '". Check the spelling, or send us a DM on Instagram.';
+  }
+
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('button');
+    if (!t) return;
+    if (t.dataset.i !== undefined) {
+      selected = TEAM[+t.dataset.i]; renderCard(); renderTeam(); renderResults();
+      $('card').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'nearest'});
+      return;
+    }
+    if (t.dataset.copy !== undefined) {
+      var p = TEAM[+t.dataset.copy];
+      copy(p.url, t, function(){ selected = p; renderCard(); renderTeam(); var u = $('card-url'); if (u) selectText(u); });
+      return;
+    }
+    if (!selected) return;
+    if (t.dataset.act === 'link') copy(selected.url, t, function(){ selectText($('card-url')); });
+    if (t.dataset.act === 'code') copy(selected.code, t, function(){ selectText(document.querySelector('.tag .big')); });
+    if (t.dataset.act === 'remember') {
+      var forget = saved === selected.ig;
+      try { if (forget) localStorage.removeItem(STORE); else localStorage.setItem(STORE, selected.ig); } catch(err) {}
+      saved = forget ? null : selected.ig;
+      renderCard();
+      announce(forget ? 'Forgotten on this phone' : 'Saved on this phone');
+    }
+  });
+  $('q').addEventListener('input', renderResults);
+
+  /* drop timing: 6PM AEDT = 07:00 UTC */
+  var T = { reveal: Date.UTC(2026,10,24,7), early: Date.UTC(2026,10,25,7), pub: Date.UTC(2026,10,26,7), bf: Date.UTC(2026,10,30,7) };
+  var DATES = [
+    {t:T.reveal, d:'Tue 24 Nov', h:'Drop revealed on our socials', p:'The new collection goes up on our socials.'},
+    {t:T.early,  d:'Wed 25 Nov', h:'Early access for sign ups, including you', p:'40% off for Black Friday, plus free shipping for the first 24 hours.'},
+    {t:T.pub,    d:'Thu 26 Nov', h:'On sale to the general public', p:'Everyone can shop the drop from here.'},
+    {t:T.bf,     d:'Mon 30 Nov', h:'Black Friday deal ends', p:'The 40% off finishes, so lock in as many sales through your code as you can before then.'},
+    {t:null,     d:'For about 2 weeks', h:'The drop stays on sale', p:'Depending on how fast it sells.'}
+  ];
+  function phase(now){
+    if (now < T.early) return {pill:'Up next', live:false, h:'Early access opens Wed 25 Nov, 6PM', p:'Sign ups shop first, and that includes you: 40% off for Black Friday plus free shipping for 24 hours.'};
+    if (now < T.pub)   return {pill:'Live now', live:true, h:'Early access is open', p:'Shop before anyone else: 40% off for Black Friday and free shipping until Thu 26 Nov, 6PM. Get your code out there now.'};
+    if (now < T.bf)    return {pill:'Live now', live:true, h:'On sale to everyone', p:'Black Friday 40% off ends Mon 30 Nov, 6PM. Lock in as many sales through your code as you can before then.'};
+    return {pill:'On sale', live:false, h:'Black Friday has ended', p:'The drop stays on sale for about 2 weeks from launch, depending on how fast it sells. Keep sharing your code.'};
+  }
+  function chipFor(i, now){
+    var x = DATES[i], next = DATES.filter(function(z){ return z.t && z.t > now; })[0];
+    if (i === 0) return now >= x.t ? ['done','Done'] : ['next','Next'];
+    if (i === 1) return now >= T.pub ? ['done','Done'] : now >= x.t ? ['live','Live now'] : [next === x ? 'next' : '', next === x ? 'Next' : 'Soon'];
+    if (i === 2) return now >= x.t ? ['live','Live now'] : [next === x ? 'next' : '', next === x ? 'Next' : 'Soon'];
+    if (i === 3) return now >= x.t ? ['done','Ended'] : now >= T.pub ? ['next','Next'] : ['', 'Soon'];
+    return null;
+  }
+  function tick(){
+    var now = Date.now(), ph = phase(now);
+    $('st-pill').textContent = ph.pill; $('st-pill').className = 'pill' + (ph.live ? ' live' : '');
+    $('st-h').textContent = ph.h; $('st-p').textContent = ph.p;
+    $('dates').innerHTML = DATES.map(function(x, i){
+      var c = chipFor(i, now), done = c && (c[1] === 'Done' || c[1] === 'Ended');
+      return '<div class="date' + (done ? ' done' : '') + '">' +
+        '<div class="when">' + esc(x.d) + (x.t ? '<small>6PM AEDT</small>' : '') + '</div>' +
+        '<div class="what"><b>' + esc(x.h) + '</b><span>' + esc(x.p) + '</span></div>' +
+        (c ? '<span class="chip ' + c[0] + '">' + esc(c[1]) + '</span>' : '<span></span>') +
+      '</div>';
+    }).join('');
+  }
+
+  renderCard(); renderTeam(); renderResults(); tick();
+  setInterval(tick, 30000);
+})();
+</script>
+
+</body>
+</html>
